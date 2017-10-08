@@ -75,7 +75,7 @@ steps_per_day
 
 2. Make a histogram of the total number of steps taken each day
 
-![](figures/figure-Total number of steps taken each day-1.png)<!-- -->
+![](figures/figure-histogram1-1.png)<!-- -->
 
 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -115,7 +115,7 @@ interval_data <- activity_data %>%
 ggplot(interval_data, aes(x=interval, y=steps)) + geom_line(color = "blue")
 ```
 
-![](figures/figure-Time series plot-1.png)<!-- -->
+![](figures/figure-Time_series_plot-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -174,7 +174,7 @@ steps_per_day2 <- data_new %>%
 hist(steps_per_day2$steps, main = "Total number of steps taken each day", col="blue", xlab="Number of Steps", breaks=20)
 ```
 
-![](figures/figure-Missing values replaced-1.png)<!-- -->
+![](figures/figure-histogram2-1.png)<!-- -->
 
 
 ```r
@@ -227,6 +227,6 @@ s <- ggplot(interval_full, aes(x=interval, y=steps, color = weektype)) +
 print(s)
 ```
 
-![](figures/figure-weekday vs. weekend-1.png)<!-- -->
+![](figures/figure-panel_plot-1.png)<!-- -->
 
 
